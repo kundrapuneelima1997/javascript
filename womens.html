@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(241, 234, 233);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        .cont {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping */
+            margin-top: 30px;
+            padding: 10px;
+            margin-left: 40px;
+        }
+        .item {
+          
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            width: 300px;
+            height: 200px;
+            margin-left: 10px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .item img {
+            border-radius: 16px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item h1 {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px; 
+            margin: 0;
+            font-size: 1.8rem; 
+        }
+        .container-fluid {
+            background-image: radial-gradient(circle, #f8acdc, #ea9cbe, #f590e8, #c6769e, #f28043);
+            height: 80px;
+        }
+        .deals {
+            font-style: italic;
+            font-size: 50px;
+            text-align: center;
+            border: 2px solid coral;
+            background-color: #ec65f8;
+            border-radius: 16px;
+            
+            margin: 20px ;
+        }
+        .card {
+            margin: 10px;
+            max-width: 300px;
+            gap:2%;
+        }
+        .row{
+          margin-left:40px ;
+        }
+        .car{
+          margin-bottom: 20px;
+          height: 500px;
+          width: 1000px;
+           margin-left: 200px;
+          
+        }
+        .car img{
+          border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">mens</a></li>
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+                            <li><a class="dropdown-item" href="#">Footwear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search categories" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="cont">
+        <div class="item">
+            <img src="https://img.tatacliq.com/images/i19//437Wx649H/MP000000023432270_437Wx649H_202408251312551.jpeg" alt="Item 1">
+            <h1>kurtas</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000009602034_437Wx649H_202105220325061.jpeg" alt="Item 2">
+            <h1>kurtas sets</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/graphic-tshirt-trendy-design-mockup-presented-wooden-hanger_460848-14019.jpg?t=st=1725803216~exp=1725806816~hmac=68e8915b3ae6d7b7b1ea77bd847b3dd2ede56b58b1f5c2a08c66c15e042b7f4a&w=740" alt="Item 3">
+            <h1>T-shirts</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/expressive-young-woman-posing-studio_176474-35578.jpg?ga=GA1.1.361902404.1720449412&semt=ais_hybrid " alt="Item 4">
+            <h1>Inner wear</h1>
+        </div>   
+    </div><br><br><br>
+    <div class="deals">
+        <h1>Steal These Deals</h1>
+    </div>
+    <div class="car">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img.freepik.com/free-vector/sales-landing-page-with-fashion_23-2148333351.jpg?t=st=1725861758~exp=1725865358~hmac=10a64fcfca5f8fa1c9f2d9f0d55012275e2efd788a37ceeea06ae0b435939ac6&w=740" height="500px" width="1000px" alt="...">
+           
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-vector/fashion-trends-landing-page-template_23-2150789663.jpg?t=st=1725861808~exp=1725865408~hmac=2163a7419cd8f52a29d31b92c3093fe42e579e0c44919c2ae3c92c547ebffc19&w=740" height="500px" width="1000px" alt="...">
+           
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-vector/fashion-trends-sale-banner-template_23-2150769839.jpg?t=st=1725861842~exp=1725865442~hmac=3a9ea5cab2d101f047b884f0da741cf108aa1fbc5e758785ef442b309f840000&w=740" height="500px" width="1000px" alt="...">
+           
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/young-woman-beautiful-yellow-dress_1303-17536.jpg?ga=GA1.1.361902404.1720449412&semt=ais_hybrid" height="350px" width="300px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.500</h5>
+                <p class="card-text">Dress</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/woman-with-braided-hair-closed-eyes_23-2148261283.jpg?t=st=1725862344~exp=1725865944~hmac=b5d35ec250e0c537dba8865578e9b78d1ab00825ad14bbb0f7dbe356d88d0330&w=360"  height="350px" width="300px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.1000</h5>
+                <p class="card-text">kurta sets</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/inspired-girl-pink-socks-eating-pizza-with-best-friend-indoor-photo-two-sisters-pajamas-enjoying-italian-food-bed_197531-21508.jpg?t=st=1725862509~exp=1725866109~hmac=78f214fef3b19e7ee7867f902e309cb47ec7cab1eb2ac3ee9602385b4654d001&w=740"  height="350px" width="300px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.200</h5>
+                <p class="card-text">Night Dresses</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/beautiful-young-woman-wearing-sari_23-2149503000.jpg?t=st=1725862858~exp=1725866458~hmac=8732f9c59d6bd230de3365ef0bc5b079836c1722b01d49fdf65959dada4d4194&w=360"  height="350px" width="300px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.1500</h5>
+                <p class="card-text">Lehangas</p>
+            </div>
+        </div>
+    </div>
+</

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.sect1{
+    background-image:url(img/3013651.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    border-radius: 16px;
+    top: 0;
+    
+}
+
+.btn1 button{
+margin-top: 455px;
+margin-left: 80px;
+
+border: none;
+  color: rgb(95, 5, 5);
+  padding: 18px 74px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 16px;
+transition-duration: 0.5s;
+  cursor: pointer;
+}
+.btn1 button:hover{
+    background-color: rgb(243, 243, 52);
+    color: black;
+} 
+.cont ,.cont1,.cont2{
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+}
+.sect2 , .sect3 ,.sect4, .sect5,.sect6, .sect7{
+    position: relative; /* Make the container relative */
+    margin-top: 20px;
+    border: 2px solid purple;
+    border-radius: 16px;
+}
+.sect2 img , .sect3 img, .sect4 img,.sect5 img , .sect6 img, .sect7 img{
+    
+    border-radius: 16px;
+    display: block;
+}
+.text1, .text2, .text3, .text4, .text5,.text6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.sect2:hover .text1{
+    opacity: 1;
+}
+
+.sect3:hover .text2{
+    opacity: 1;
+}
+.sect4:hover .text3{
+    opacity: 1;
+}
+.sect5:hover .text4{
+    opacity: 1;
+}
+.sect6:hover .text5{
+    opacity: 1;
+}
+.sect7:hover .text6{
+    opacity: 1;
+}
+</style>
+<body>
+    <div class="sect1">
+       
+        <div class="btn1">
+            <button>Shop now</button>
+        </div>
+    </div>
+    <div class="cont1">
+        <div class="sect4">
+            <img src="https://img.freepik.com/free-photo/group-beautiful-girls-boys-pastel_155003-12453.jpg?t=st=1724494648~exp=1724498248~hmac=11a389edebc3b256405dd753bff262b0a8fa9a62e698fcd8235a47684a7ff16a&w=740" alt="women" border-radius="16px" class="rounded" width="550px" height="300px">
+            <div class="text3">Kids</div>
+        </div>
+         <div class="sect5">
+             <img src="https://img.freepik.com/free-photo/still-life-say-no-fast-fashion_23-2149669600.jpg?t=st=1724494578~exp=1724498178~hmac=c7687d91c4abd9ff6627787b94dee6e056a677c834189c9b92b61fff82a54fe8&w=740" alt="men"width="550px" height="300px">
+             <div class="text4">Footwear</div>
+        </div>
+     </div>
+    <div class="cont">
+       <div class="sect2">
+           <img src="img/women.jpg" alt="women" border-radius="16px" class="rounded" width="550px" height="300px">
+           <div class="text1">Womens</div>
+       </div>
+        <div class="sect3">
+            <img src="https://img.freepik.com/free-photo/portrait-young-handsome-man-yellow-scene_23-2148184575.jpg?t=st=1724480270~exp=1724483870~hmac=ad16298ea523e599532c5dbd7ded02e997d66fa5e6f1b111e9ba82c7a90f3d41&w=740" alt="men"width="550px" height="300px">
+            <div class="text2">Mens</div>
+       </div>
+    </div>
+    
+     <div class="cont2">
+        <div class="sect6">
+            <img src="https://img.freepik.com/free-photo/high-angle-cosmetics-containers-flowers_23-2149270025.jpg?t=st=1724497942~exp=1724501542~hmac=fc466cbe172c4593d88ddd01404157e46bb2f1dfed04d22a6ef7520da8e27159&w=740" alt="women" border-radius="16px" class="rounded" width="550px" height="300px">
+            <div class="text5">Beauty</div>
+        </div>
+         <div class="sect7">
+             <img src="https://img.freepik.com/premium-photo/camera-sunglasses-hat-are-yellow-surface_758367-181138.jpg?w=740" alt="men"width="550px" height="300px">
+             <div class="text6">Accessiores</div>
+        </div>
+     </div>
+</body>
+</html>

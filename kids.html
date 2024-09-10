@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(246, 194, 237);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        .cont {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping */
+            margin-top: 30px;
+            padding: 10px;
+            margin-left: 40px;
+        }
+        .item {
+          
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            width: 300px;
+            height: 200px;
+            margin-left: 10px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .item img {
+            border-radius: 16px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item h1 {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px; 
+            margin: 0;
+            font-size: 1.8rem; 
+        }
+        .container-fluid {
+            background-image: radial-gradient(circle, #f4e9ed, #a1ed85, #f8e83a, #d156a3, #a63ad9);
+            height: 80px;
+        }
+        .deals {
+            font-style: italic;
+            font-size: 50px;
+            text-align: center;
+            border: 2px solid coral;
+            background-color: #f0df29;
+            border-radius: 16px;
+            
+            margin: 20px ;
+        }
+        .card {
+            margin: 10px;
+            max-width: 300px;
+            gap:2%;
+        }
+        .row{
+          margin-left:40px ;
+        }
+        .car{
+          margin-bottom: 20px;
+          height: 500px;
+          width: 1000px;
+           margin-left: 200px;
+          
+        }
+        .car img{
+          border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">mens</a></li>
+                            <li><a class="dropdown-item" href="#">womens</a></li>
+                            <li><a class="dropdown-item" href="#">Footwear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search categories" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="cont">
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/front-view-cute-boy-blue-t-shirt-khaki-trousers-talking-phone-riding-segway-pink-floor_179666-942.jpg?t=st=1725869650~exp=1725873250~hmac=f934e0171ef6e14abd86b57302180a552b9ab09231e27c662c271f1ab3078d46&w=740" alt="Item 1">
+            <h1>Boys Fashion</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/quotes-about-family-concept_23-2150038775.jpg?t=st=1725870233~exp=1725873833~hmac=2e03c01bb949cd45889a071c09f5e2591e558028a3b2d8e3d068dd7161daea1b&w=740" alt="Item 2">
+            <h1>Girl Fashion</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/small-baby-lies-basket_8353-7799.jpg?t=st=1725869998~exp=1725873598~hmac=55edcc6af00faf6a611f5e77db63d9b0801b57af7f6285ae46b30e6d2b204b73&w=740" alt="Item 3">
+            <h1>Infants</h1>
+        </div>
+        <div class="item">
+            <img src="https://img.freepik.com/free-photo/cute-plush-toys-arrangement_23-2150312316.jpg?t=st=1725870117~exp=1725873717~hmac=d5778a9e0b9fbd9a9580a9957faac31624b0b07945863633a45c06971613041b&w=740" alt="Item 4">
+            <h1>Toys</h1>
+        </div>   
+    </div><br><br><br>
+    <div class="deals">
+        <h1>Steal These Deals</h1>
+    </div>
+    <div class="car">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img.freepik.com/free-psd/world-children-s-day-facebook-template_23-2150811697.jpg?t=st=1725870865~exp=1725874465~hmac=bf6fbc162f40cc28cddd0468617fcf5c2fa1665bd36f68e20120491ec56a3cdc&w=826" height="500px" width="1000px" alt="...">
+           
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-vector/flat-design-fashion-stylist-sale-banner_23-2150079105.jpg?t=st=1725870613~exp=1725874213~hmac=ab771f0b41c35c22fea9e7eefbf5899703b6c2af8f51270ec1b048441b24522b&w=826" height="500px" width="1000px" alt="...">
+           
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-vector/flat-kids-social-media-post-template_23-2149658126.jpg?t=st=1725870781~exp=1725874381~hmac=aedce3b39359eb9370d9286e2003bd4501bf5892ec8f82a2ba855f420c1fff38&w=740" height="500px" width="1000px" alt="...">
+           
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/little-girl-cute-dress_1303-13456.jpg?t=st=1725871952~exp=1725875552~hmac=f2cb8a276e951765a4fb4fab52e03b45bc0be13741b99f2a103ab333755ad54b&w=740" height="350px" width="300px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.500</h5>
+                <p class="card-text">Partywear Dresses</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/portrait-young-boy-student-school-uniform_23-2150282522.jpg?t=st=1725872155~exp=1725875755~hmac=d6fc43990f56dad45d76df6d9212c144ee76bbba71872a7c3f1d562ba7510f0d&w=360"  height="350px" width="300px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.1000</h5>
+                <p class="card-text">Boys partywear</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/caucasian-kids-holding-paper-drinking_53876-146364.jpg?t=st=1725872502~exp=1725876102~hmac=e2b4bf8dbf88a1a21bad3aefb32ee661bf951bfc3a97ca9a559f734aa6fff1c2&w=740"  height="350px" width="300px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.200</h5>
+                <p class="card-text">tops and Tees</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/kids-pajama-with-birthday-party-pattern_53876-105715.jpg?t=st=1725872653~exp=1725876253~hmac=0847983ca89c1b1f6bdf2cdb326b2008008ba34fab56bf45826bc96b0a7c8f1e&w=360"  height="350px" width="300px" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Under Rs.300</h5>
+                <p class="card-text">Co-ord sets</p>
+            </div>
+        </div>
+    </div>
+</
